@@ -1,0 +1,118 @@
+@import './variable.scss';
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+.btn{
+    border-radius: 50px;
+    &:hover{
+        color:#ffffff;
+        background-color:#f56928;
+    }
+}
+ul{
+    list-style: none;
+}
+.header{
+    p{
+        font-size: 20px;
+    }
+}
+input:focus{
+    outline: none ;
+    border: 1px solid #fa7539;
+    box-shadow: 0 3px 10px #535353;
+}
+.btn-primary{
+    color:#ffffff;
+}
+.btn-form{
+    border-radius: 0;
+}
+.book-wrapper{
+    position: relative;
+    .book-badge{
+        width:100px;
+        height:100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:0;
+        right:0;
+        border-radius: 100%;
+        color:#ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        
+    }
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+	opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-fade{
+    margin-bottom: 100px;
+    .carousel-indicators{
+        bottom: -30px;;
+        button{
+            width:10px;
+            height:10px;
+            background-color: #000000;
+            border-radius: 50%;
+        }
+    }
+    .carousel-review{
+        border-left: 3px solid #fa7539;
+    }
+    img{
+        width:100px;
+        height:100px;
+    }
+    .carousel-caption{
+        color:#000000;
+        position: static;
+    }
+}
+.content{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(246,248,252,1) 77%);
+
+    .content-list{
+        .content-item{
+            font-size: 16px;
+            span{
+                font-size: 50px;
+            }
+        }
+    }
+}
+.profile{
+    width: 60px;
+    height: 60px;
+}
